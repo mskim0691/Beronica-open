@@ -4,6 +4,7 @@ import { FEATURES } from '@/lib/features-data'
 import { generateAlternates } from '@/lib/seo'
 import AnchorNav from '@/components/sections/features/AnchorNav'
 import FeatureBlock from '@/components/sections/features/FeatureBlock'
+import FeaturesHeroVisual from '@/components/sections/features/FeaturesHeroVisual'
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params
@@ -27,6 +28,7 @@ export default function FeaturesPage() {
           <p className="mt-4 text-lg text-[var(--color-text-secondary)]">
             {t('subtitle')}
           </p>
+          <FeaturesHeroVisual />
         </div>
       </section>
 
