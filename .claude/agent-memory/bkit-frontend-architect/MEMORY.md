@@ -1,0 +1,1 @@
+- [beronica-site 프로젝트 상태](project_beronica-site.md) — Design 페이즈 진행 중, Option C 아키텍처 확정, MDX PoC 대기

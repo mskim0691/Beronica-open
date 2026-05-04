@@ -1,0 +1,192 @@
+{
+  "nav": {
+    "home": "Home",
+    "features": "Features",
+    "getStarted": "Get Started",
+    "blog": "Blog",
+    "about": "About"
+  },
+  "home": {
+    "hero": {
+      "tagline": "AI works, you grow.",
+      "subtitle": "An AI-powered work & knowledge operating system that remembers, organizes, and reviews everything for you.",
+      "ctaPrimary": "Start in 5 minutes",
+      "ctaSecondary": "Explore features"
+    },
+    "problem": {
+      "quote": "You worked all day, but can't tell what you actually accomplished.",
+      "fragmentation": "Tool Fragmentation",
+      "fragmentationDesc": "10 apps, no integration",
+      "gtdFailure": "GTD/PARA Abandonment",
+      "gtdFailureDesc": "Manual sorting, quit in 3 weeks",
+      "contextReset": "AI Context Reset",
+      "contextResetDesc": "Re-explain every time",
+      "searchCost": "Information Search Cost",
+      "searchCostDesc": "9.3 hours wasted per week",
+      "burnout": "Burnout",
+      "burnoutDesc": "82% of knowledge workers",
+      "stat1": "9.3 hours/week wasted searching for information — McKinsey",
+      "stat2": "82% of knowledge workers experience burnout — Microsoft",
+      "insight": "The problem isn't having too many tools. It's not having a system that automatically connects and organizes them."
+    },
+    "solution": {
+      "before": "Before: You adapt to tools",
+      "beforeDesc": "Sort, organize, and review — all manually",
+      "after": "Beronica: AI adapts to you",
+      "afterDesc": "Speak to capture, auto-classify, auto-review",
+      "chatUser1": "I need to find a restaurant for the team dinner this month",
+      "chatBot1": "Saved to Inbox. Shall I classify it as a short-term project? (Due: this month)",
+      "chatUser2": "Yes",
+      "chatBot2": "Moved to Projects folder!",
+      "killer": "And most importantly: AI remembers you.",
+      "killerSub": "Start a new conversation, and the previous context carries over."
+    },
+    "features": {
+      "title": "Just say it. Beronica handles the rest.",
+      "subtitle": "7 core features that let AI run your entire workflow.",
+      "cta": "Explore all features",
+      "aiMemory": "AI Memory",
+      "aiMemoryDesc": "AI that remembers across sessions",
+      "gtdInbox": "GTD Inbox",
+      "gtdInboxDesc": "Just say it, AI organizes",
+      "dailyReview": "Daily Review",
+      "dailyReviewDesc": "Morning TOP 3 suggestions",
+      "paraStructure": "PARA Structure",
+      "paraStructureDesc": "Everything in its place",
+      "weeklyReview": "Weekly Review",
+      "weeklyReviewDesc": "AI wraps up your week",
+      "contactMgmt": "Contact Management",
+      "contactMgmtDesc": "Automatic relationship tracking",
+      "localPrivacy": "Local Privacy",
+      "localPrivacyDesc": "Complete data ownership"
+    },
+    "comparison": {
+      "title": "Why Beronica?",
+      "sessionMemory": "Cross-session Memory",
+      "gtdAuto": "GTD Automation",
+      "paraAuto": "PARA Structure",
+      "dailyWeekly": "Daily/Weekly Review",
+      "contactMgmt": "Contact Management",
+      "localData": "Local Data",
+      "simple": "Simple",
+      "basic": "Basic",
+      "manual": "Manual",
+      "deep": "Deep context",
+      "full": "Fully automated",
+      "autoClassify": "AI auto-classify",
+      "autoRun": "Auto-run",
+      "autoAccum": "Auto-tracked"
+    },
+    "useCases": {
+      "title": "Built for people like you.",
+      "freelancer": "Freelancer",
+      "freelancerName": "Jihyun, 34, UX Designer",
+      "freelancerPain": "Juggling 5 clients at once, but tasks only exist in her head",
+      "freelancerAfter": "I never miss deadlines anymore. For the first time, I've maintained GTD for over 3 months.",
+      "operator": "Operations",
+      "operatorName": "Taeho, 38, Startup COO",
+      "operatorPain": "Handling accounting, HR, and legal simultaneously — exhausted from context switching",
+      "operatorAfter": "AI remembers context for each domain, so I can switch tasks right after meetings.",
+      "developer": "Developer",
+      "developerName": "Seojun, 29, Backend Developer",
+      "developerPain": "Notes pile up in Obsidian but never get organized, wasting time searching",
+      "developerAfter": "With PARA auto-organization, I can find notes from 3 months ago instantly."
+    },
+    "social": {
+      "months": "7+",
+      "monthsLabel": "months battle-tested",
+      "opensource": "100%",
+      "opensourceLabel": "open source & free",
+      "startTime": "5 min",
+      "startTimeLabel": "to get started",
+      "weeklyHours": "2 hrs",
+      "weeklyHoursLabel": "saved per week",
+      "cost": "$0",
+      "costLabel": "system cost"
+    },
+    "newsletter": {
+      "title": "Stay up to date with Beronica.",
+      "placeholder": "Enter your email",
+      "submit": "Subscribe",
+      "success": "Subscribed! Welcome.",
+      "error": "Please try again later."
+    }
+  },
+  "features": {
+    "title": "Features",
+    "subtitle": "7 core features Beronica provides",
+    "detail": {
+      "aiMemory": "AI Memory",
+      "aiMemoryDesc": "Start a new conversation, and previous context carries over. Beronica remembers your work style, preferences, and project states — no re-explaining needed.",
+      "gtdInbox": "GTD Inbox",
+      "gtdInboxDesc": "Just say what's on your mind. AI instantly captures it to your inbox and auto-classifies into Projects, Areas, or Resources. No more manual sorting stress.",
+      "dailyReview": "Daily Review",
+      "dailyReviewDesc": "Every morning, AI suggests your top 3 priorities. Personalized recommendations based on deadlines, priorities, and your energy levels.",
+      "paraStructure": "PARA Structure",
+      "paraStructureDesc": "Projects, Areas, Resources, Archive — everything automatically finds its place. AI operates Tiago Forte's PARA methodology in real-time.",
+      "weeklyReview": "Weekly Review",
+      "weeklyReviewDesc": "Friday evening, AI wraps up your week. Completed/pending project status, next week's key tasks, and insights — all at a glance.",
+      "contactMgmt": "Contact Management",
+      "contactMgmtDesc": "People mentioned in conversations are automatically tracked. AI remembers who you talked to, when, and about what — maintaining relationship context.",
+      "localPrivacy": "Local Privacy",
+      "localPrivacyDesc": "All data is stored as markdown files in your Obsidian Vault. No cloud lock-in — complete data ownership guaranteed."
+    }
+  },
+  "getStarted": {
+    "title": "Get Started",
+    "subtitle": "Start Beronica in just 5 minutes.",
+    "heroDesc": "Copy the prompt below and paste it into Claude or GPT. AI will automatically install the Beronica system in your Obsidian Vault.",
+    "copyPrompt": "Copy Auto Setup Prompt",
+    "copied": "Copied!",
+    "promptLabel": "Auto Setup Prompt",
+    "step1Title": "1. Install Obsidian",
+    "step1Desc": "If you haven't already, install Obsidian first.",
+    "step1Link": "Download Obsidian",
+    "step2Title": "2. Copy the Prompt",
+    "step2Desc": "Copy the Auto Setup Prompt above.",
+    "step3Title": "3. Paste into AI",
+    "step3Desc": "Paste the prompt into Claude or GPT and run it. PARA structure will be automatically generated in your Vault.",
+    "folderPreviewTitle": "Generated Folder Structure",
+    "vaultDownload": "Download Vault Template",
+    "vaultDownloadDesc": "If you prefer to set up the folder structure manually without the prompt, download the pre-made Vault template.",
+    "vaultDownloadNote": "Optional — the Auto Setup Prompt is all you need."
+  },
+  "blog": {
+    "title": "Blog",
+    "subtitle": "Deep insights on GTD, PARA, and AI Memory",
+    "readMore": "Read more",
+    "readingTime": "{minutes} min read",
+    "allPosts": "All Posts",
+    "featured": "Featured",
+    "categories": {
+      "GTD": "GTD",
+      "PARA": "PARA",
+      "AI Memory": "AI Memory",
+      "Build Log": "Build Log",
+      "Tutorial": "Tutorial"
+    },
+    "noPosts": "No posts yet.",
+    "postedOn": "Published",
+    "author": "Author",
+    "tags": "Tags",
+    "tableOfContents": "Table of Contents",
+    "sharePost": "Share",
+    "relatedPosts": "Related Posts",
+    "backToBlog": "← Back to Blog",
+    "copyLink": "Copy link",
+    "linkCopied": "Link copied!"
+  },
+  "about": {
+    "title": "About"
+  },
+  "footer": {
+    "copyright": "© {year} Beronica. All rights reserved.",
+    "github": "GitHub",
+    "rss": "RSS"
+  },
+  "common": {
+    "readMore": "Read more",
+    "readingTime": "{minutes} min read",
+    "loading": "Loading..."
+  }
+}

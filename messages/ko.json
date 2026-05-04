@@ -1,0 +1,192 @@
+{
+  "nav": {
+    "home": "홈",
+    "features": "기능",
+    "getStarted": "시작하기",
+    "blog": "블로그",
+    "about": "소개"
+  },
+  "home": {
+    "hero": {
+      "tagline": "AI가 일하고, 당신은 성장한다.",
+      "subtitle": "일하면서 쌓이는 모든 것을, AI가 기억하고 정리해주는 업무/지식 운영 시스템.",
+      "ctaPrimary": "5분이면 시작합니다",
+      "ctaSecondary": "기능 알아보기"
+    },
+    "problem": {
+      "quote": "하루 종일 일했는데, 정작 뭘 했는지 모르겠다.",
+      "fragmentation": "도구 파편화",
+      "fragmentationDesc": "10개 앱, 통합 불가",
+      "gtdFailure": "GTD/PARA 유지 실패",
+      "gtdFailureDesc": "수동 분류, 3주 만에 포기",
+      "contextReset": "AI 컨텍스트 리셋",
+      "contextResetDesc": "매번 재설명",
+      "searchCost": "정보 검색 비용",
+      "searchCostDesc": "주 9.3시간 낭비",
+      "burnout": "번아웃",
+      "burnoutDesc": "지식노동자 82%가 경험",
+      "stat1": "주 9.3시간을 정보 검색에 낭비 — McKinsey",
+      "stat2": "지식노동자 82%가 업무 과부하 번아웃 경험 — Microsoft",
+      "insight": "도구가 많아서 문제가 아닙니다. \"자동으로 연결하고 정리해주는 시스템\"이 없어서 문제입니다."
+    },
+    "solution": {
+      "before": "기존: 사람이 도구에 맞춘다",
+      "beforeDesc": "분류, 정리, 리뷰를 매번 수동으로",
+      "after": "Beronica: AI가 사람에 맞춘다",
+      "afterDesc": "말하면 캡처, 자동 분류, 자동 리뷰",
+      "chatUser1": "이번 달 팀 회식 장소 알아봐야 해",
+      "chatBot1": "인박스에 저장했어요. 단발 프로젝트로 분류할까요? (마감: 이번 달)",
+      "chatUser2": "응",
+      "chatBot2": "프로젝트 폴더로 이동 완료!",
+      "killer": "그리고 가장 중요한 것: AI가 당신을 기억합니다.",
+      "killerSub": "새 대화를 시작해도, 이전 맥락이 이어집니다."
+    },
+    "features": {
+      "title": "말하면 끝. 나머지는 베로니카가 합니다.",
+      "subtitle": "7개 핵심 기능으로 업무 전체를 AI가 운영합니다.",
+      "cta": "기능 자세히 보기",
+      "aiMemory": "AI Memory",
+      "aiMemoryDesc": "세션을 넘어 기억하는 AI",
+      "gtdInbox": "GTD Inbox",
+      "gtdInboxDesc": "말하면 끝, AI가 정리",
+      "dailyReview": "Daily Review",
+      "dailyReviewDesc": "매일 아침, TOP3 제안",
+      "paraStructure": "PARA Structure",
+      "paraStructureDesc": "모든 정보가 제자리에",
+      "weeklyReview": "Weekly Review",
+      "weeklyReviewDesc": "AI가 한 주를 정리",
+      "contactMgmt": "Contact Management",
+      "contactMgmtDesc": "인맥 자동 관리",
+      "localPrivacy": "Local Privacy",
+      "localPrivacyDesc": "완전한 데이터 소유권"
+    },
+    "comparison": {
+      "title": "왜 Beronica인가?",
+      "sessionMemory": "세션간 기억",
+      "gtdAuto": "GTD 자동화",
+      "paraAuto": "PARA 구조",
+      "dailyWeekly": "일간/주간 리뷰",
+      "contactMgmt": "인맥 관리",
+      "localData": "로컬 데이터",
+      "simple": "단순",
+      "basic": "기본",
+      "manual": "수동",
+      "deep": "깊은 맥락",
+      "full": "완전 자동",
+      "autoClassify": "AI 자동분류",
+      "autoRun": "자동 실행",
+      "autoAccum": "자동 축적"
+    },
+    "useCases": {
+      "title": "이런 분들이 쓰고 있습니다.",
+      "freelancer": "프리랜서",
+      "freelancerName": "박지현, 34세, UX 디자이너",
+      "freelancerPain": "클라이언트 5곳을 동시에 관리하지만, 할 일이 머릿속에만 존재",
+      "freelancerAfter": "마감 놓치는 일이 없어졌어요. 처음으로 GTD를 3개월 넘게 유지하고 있어요.",
+      "operator": "경영지원",
+      "operatorName": "김태호, 38세, 스타트업 COO",
+      "operatorPain": "회계, 인사, 법무를 동시에 처리하며 컨텍스트 스위칭에 지쳐 있음",
+      "operatorAfter": "AI가 영역별 맥락을 기억해주니까, 회의 직후 바로 다음 업무로 전환돼요.",
+      "developer": "개발자",
+      "developerName": "이서준, 29세, 백엔드 개발자",
+      "developerPain": "Obsidian에 메모는 쌓이는데 정리가 안 되고, 매번 찾는 데 시간 소모",
+      "developerAfter": "PARA 구조로 자동 정리되니까, 3개월 전 메모도 바로 찾아요."
+    },
+    "social": {
+      "months": "7개월+",
+      "monthsLabel": "실전 검증",
+      "opensource": "100%",
+      "opensourceLabel": "오픈소스 무료 공개",
+      "startTime": "5분",
+      "startTimeLabel": "이면 시작",
+      "weeklyHours": "주 2시간",
+      "weeklyHoursLabel": "절약",
+      "cost": "0원",
+      "costLabel": "시스템 비용"
+    },
+    "newsletter": {
+      "title": "베로니카의 최신 소식을 받아보세요.",
+      "placeholder": "이메일 주소 입력",
+      "submit": "구독하기",
+      "success": "구독 완료! 환영합니다.",
+      "error": "잠시 후 다시 시도해 주세요."
+    }
+  },
+  "features": {
+    "title": "기능",
+    "subtitle": "베로니카가 제공하는 7가지 핵심 기능",
+    "detail": {
+      "aiMemory": "AI Memory",
+      "aiMemoryDesc": "새 대화를 시작해도 이전 맥락이 이어집니다. 베로니카는 당신의 업무 스타일, 선호, 프로젝트 상태를 기억하여 매번 재설명 없이 대화를 이어갑니다.",
+      "gtdInbox": "GTD Inbox",
+      "gtdInboxDesc": "떠오르는 것을 말하면 끝. AI가 즉시 인박스에 캡처하고, 맥락에 따라 프로젝트·영역·자원으로 자동 분류합니다. 수동 분류 스트레스가 사라집니다.",
+      "dailyReview": "Daily Review",
+      "dailyReviewDesc": "매일 아침, AI가 오늘의 핵심 3가지를 제안합니다. 데드라인, 우선순위, 에너지 레벨을 고려한 맞춤 추천으로 하루를 시작하세요.",
+      "paraStructure": "PARA Structure",
+      "paraStructureDesc": "Projects, Areas, Resources, Archive — 모든 정보가 자동으로 제자리에 배치됩니다. Tiago Forte의 PARA 방법론을 AI가 실시간으로 운영합니다.",
+      "weeklyReview": "Weekly Review",
+      "weeklyReviewDesc": "금요일 저녁, AI가 한 주를 정리합니다. 완료/미완료 프로젝트 현황, 다음 주 핵심 과제, 인사이트를 한눈에 보여줍니다.",
+      "contactMgmt": "Contact Management",
+      "contactMgmtDesc": "대화 중 언급된 사람 정보를 자동으로 축적합니다. 누구와 언제 무슨 이야기를 했는지, AI가 관계의 맥락을 기억합니다.",
+      "localPrivacy": "Local Privacy",
+      "localPrivacyDesc": "모든 데이터는 당신의 Obsidian Vault에 마크다운 파일로 저장됩니다. 클라우드 종속 없이, 완전한 데이터 소유권을 보장합니다."
+    }
+  },
+  "getStarted": {
+    "title": "시작하기",
+    "subtitle": "5분이면 베로니카를 시작할 수 있습니다.",
+    "heroDesc": "아래 프롬프트를 복사해서 Claude나 GPT에 붙여넣으세요. AI가 자동으로 Obsidian Vault에 베로니카 시스템을 설치합니다.",
+    "copyPrompt": "자동 설치 프롬프트 복사",
+    "copied": "복사됨!",
+    "promptLabel": "자동 설치 프롬프트",
+    "step1Title": "1. Obsidian 설치",
+    "step1Desc": "아직 설치하지 않았다면, Obsidian을 먼저 설치하세요.",
+    "step1Link": "Obsidian 다운로드",
+    "step2Title": "2. 프롬프트 복사",
+    "step2Desc": "위의 자동 설치 프롬프트를 복사하세요.",
+    "step3Title": "3. AI에 붙여넣기",
+    "step3Desc": "Claude 또는 GPT에 프롬프트를 붙여넣고 실행하면, Vault에 PARA 구조가 자동 생성됩니다.",
+    "folderPreviewTitle": "생성되는 폴더 구조",
+    "vaultDownload": "Vault Template 다운로드",
+    "vaultDownloadDesc": "프롬프트 없이 직접 폴더 구조를 설정하고 싶다면, 미리 만들어진 Vault 템플릿을 다운로드하세요.",
+    "vaultDownloadNote": "보조 옵션 — 자동 설치 프롬프트만으로 충분합니다."
+  },
+  "blog": {
+    "title": "블로그",
+    "subtitle": "GTD, PARA, AI Memory에 관한 깊은 인사이트",
+    "readMore": "더 읽기",
+    "readingTime": "{minutes}분 읽기",
+    "allPosts": "전체 글",
+    "featured": "추천",
+    "categories": {
+      "GTD": "GTD",
+      "PARA": "PARA",
+      "AI Memory": "AI Memory",
+      "Build Log": "개발기",
+      "Tutorial": "튜토리얼"
+    },
+    "noPosts": "아직 작성된 글이 없습니다.",
+    "postedOn": "작성일",
+    "author": "작성자",
+    "tags": "태그",
+    "tableOfContents": "목차",
+    "sharePost": "공유하기",
+    "relatedPosts": "관련 글",
+    "backToBlog": "← 블로그로 돌아가기",
+    "copyLink": "링크 복사",
+    "linkCopied": "링크가 복사되었습니다!"
+  },
+  "about": {
+    "title": "소개"
+  },
+  "footer": {
+    "copyright": "© {year} Beronica. All rights reserved.",
+    "github": "GitHub",
+    "rss": "RSS"
+  },
+  "common": {
+    "readMore": "더 읽기",
+    "readingTime": "{minutes}분 읽기",
+    "loading": "로딩 중..."
+  }
+}

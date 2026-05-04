@@ -1,0 +1,44 @@
+# dependencies
+node_modules/
+.pnpm-store/
+
+# next.js
+.next/
+out/
+
+# production
+build/
+
+# env
+.env
+.env.local
+.env.production.local
+.env.development.local
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# vercel
+.vercel
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+
+# local tooling state
+.bkit/runtime/
+.claude/settings.local.json
+node_modules

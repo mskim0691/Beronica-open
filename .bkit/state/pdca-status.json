@@ -1,0 +1,76 @@
+{
+  "version": "3.0",
+  "lastUpdated": "2026-04-29T12:30:00.000Z",
+  "activeFeatures": ["beronica-site"],
+  "primaryFeature": "beronica-site",
+  "features": {
+    "beronica-site": {
+      "id": "beronica-site",
+      "name": "Beronica 공식 사이트 (beronica.ai)",
+      "level": "Dynamic",
+      "currentPhase": 3,
+      "phaseName": "Do",
+      "status": "do_in_progress",
+      "activeScope": "M1",
+      "completedModules": ["M1"],
+      "planPath": "docs/01-plan/beronica-site.md",
+      "designPath": "docs/02-design/features/beronica-site.design.md",
+      "architectureChoice": "C - Pragmatic Balance",
+      "sourcePrd": "beronica-site-plan.md",
+      "createdAt": "2026-04-29T01:15:00.000Z",
+      "updatedAt": "2026-04-29T12:30:00.000Z",
+      "planCompletedAt": "2026-04-29T02:30:00.000Z",
+      "designStartedAt": "2026-04-29T06:00:00.000Z",
+      "designCompletedAt": "2026-04-29T11:09:00.000Z",
+      "doStartedAt": "2026-04-29T12:00:00.000Z",
+      "decisions": {
+        "totalResolved": 8,
+        "openQuestions": 2,
+        "designReady": true,
+        "r1VerificationPassed": true,
+        "actualNextVersion": "15.5.15",
+        "actualNextNote": "Next.js 16 대신 15.5 LTS로 자동 안정화 (^15 핀). Tailwind 4.2 + React 19.2 + next-intl 4.11 조합 빌드 통과"
+      }
+    }
+  },
+  "pipeline": {
+    "currentPhase": 3,
+    "level": "Dynamic",
+    "phaseHistory": [
+      {
+        "phase": 1,
+        "name": "Plan",
+        "completedAt": "2026-04-29T02:30:00.000Z",
+        "status": "completed"
+      },
+      {
+        "phase": 2,
+        "name": "Design",
+        "completedAt": "2026-04-29T11:09:00.000Z",
+        "status": "completed"
+      }
+    ]
+  },
+  "session": {
+    "startedAt": "2026-04-29T00:39:58.579Z",
+    "onboardingCompleted": false,
+    "lastActivity": "2026-04-29T12:30:00.000Z"
+  },
+  "history": [],
+  "stateMachine": {
+    "defaultWorkflow": "default",
+    "activeWorkflows": {},
+    "totalTransitions": 0
+  },
+  "automation": {
+    "globalLevel": 2,
+    "trustScore": 40,
+    "pendingApprovals": 0,
+    "lastGateResult": null
+  },
+  "team": {
+    "enabled": true,
+    "stateFile": ".bkit/runtime/agent-state.json",
+    "eventsFile": ".bkit/runtime/agent-events.jsonl"
+  }
+}

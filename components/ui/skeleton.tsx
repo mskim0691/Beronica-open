@@ -1,0 +1,19 @@
+// Design Ref: §3.2 shadcn/ui components
+import { cn } from '@/lib/utils'
+
+function Skeleton({
+  className,
+  ...props
+}: React.HTMLAttributes<HTMLDivElement>) {
+  return (
+    <div
+      className={cn(
+        'animate-pulse rounded-md bg-[var(--color-surface)]',
+        className
+      )}
+      {...props}
+    />
+  )
+}
+
+export { Skeleton }
