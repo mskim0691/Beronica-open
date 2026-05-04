@@ -13,10 +13,10 @@ export default function Header() {
         {/* Logo */}
         <Link
           href="/"
-          className="flex items-center gap-2 text-xl font-bold text-[var(--color-primary)] hover:opacity-80 transition-opacity"
+          className="flex items-center hover:opacity-80 transition-opacity"
           aria-label={`${SITE_META.name} 홈으로 이동`}
         >
-          {SITE_META.name}
+          <img src="/logo.svg" alt={SITE_META.name} className="h-8 w-auto" />
         </Link>
 
         {/* Desktop Navigation */}
