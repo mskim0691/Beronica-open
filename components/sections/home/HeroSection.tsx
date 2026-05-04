@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { useTranslations } from 'next-intl'
 import { Button } from '@/components/ui/button'
+import HeroDemo from '@/components/demo/HeroDemo'
 
 export default function HeroSection() {
   const t = useTranslations('home.hero')
@@ -26,10 +27,8 @@ export default function HeroSection() {
           </div>
         </div>
         <div className="mt-16 flex justify-center">
-          <div className="w-full max-w-2xl rounded-card border border-[var(--color-border)] bg-[var(--color-surface)] p-8 text-center">
-            <div className="flex h-48 items-center justify-center text-[var(--color-text-muted)] md:h-64">
-              Demo Screenshot
-            </div>
+          <div className="w-full max-w-3xl">
+            <HeroDemo />
           </div>
         </div>
       </div>

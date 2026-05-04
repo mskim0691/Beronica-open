@@ -1,5 +1,9 @@
 import { useTranslations } from 'next-intl'
 import type { Feature } from '@/lib/features-data'
+import DemoChat from '@/components/demo/DemoChat'
+import DemoFolder from '@/components/demo/DemoFolder'
+import DemoTable from '@/components/demo/DemoTable'
+import DemoDiagram from '@/components/demo/DemoDiagram'
 
 interface FeatureBlockProps {
   feature: Feature
@@ -31,11 +35,11 @@ export default function FeatureBlock({ feature, index }: FeatureBlockProps) {
           </div>
 
           <div className={isReversed ? 'md:[direction:ltr]' : ''}>
-            <div className="flex aspect-[4/3] items-center justify-center rounded-[var(--radius-card)] border border-[var(--color-border)] bg-[var(--color-surface)]">
-              <div className="text-center text-sm text-[var(--color-text-muted)]">
-                <Icon className="mx-auto mb-2 h-10 w-10 opacity-30" />
-                <span>{feature.demoType} demo</span>
-              </div>
+            <div className="overflow-hidden rounded-[var(--radius-card)] border border-[var(--color-border)] bg-white">
+              {feature.demoType === 'chat' && <DemoChat featureId={feature.id as 'aiMemory' | 'gtdInbox'} />}
+              {feature.demoType === 'folder' && <DemoFolder />}
+              {feature.demoType === 'table' && <DemoTable featureId={feature.id as 'dailyReview' | 'weeklyReview'} />}
+              {feature.demoType === 'diagram' && <DemoDiagram featureId={feature.id as 'contactMgmt' | 'localPrivacy'} />}
             </div>
           </div>
         </div>
