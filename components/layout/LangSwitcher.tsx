@@ -11,6 +11,7 @@ export default function LangSwitcher() {
 
   function switchLocale() {
     const newLocale = locale === 'ko' ? 'en' : 'ko'
+    document.cookie = `NEXT_LOCALE=${newLocale}; path=/; max-age=31536000; SameSite=Lax`
     router.replace(pathname, { locale: newLocale })
   }
 
