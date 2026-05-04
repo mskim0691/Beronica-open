@@ -1,25 +1,17 @@
 'use client'
-// Design Ref: §6.3 layout, §8 i18n
-import { usePathname, useRouter } from 'next/navigation'
+
+import { useLocale } from 'next-intl'
+import { usePathname, useRouter } from '@/lib/navigation'
 import { Button } from '@/components/ui/button'
 
 export default function LangSwitcher() {
+  const locale = useLocale()
   const pathname = usePathname()
   const router = useRouter()
 
-  // /en/... 형식인지 판단
-  const isEn = pathname.startsWith('/en')
-
   function switchLocale() {
-    if (isEn) {
-      // /en → / (또는 /en/blog/slug → /blog/slug)
-      const newPath = pathname.replace(/^\/en/, '') || '/'
-      router.push(newPath)
-    } else {
-      // / → /en (또는 /blog/slug → /en/blog/slug)
-      const newPath = '/en' + (pathname === '/' ? '' : pathname)
-      router.push(newPath)
-    }
+    const newLocale = locale === 'ko' ? 'en' : 'ko'
+    router.replace(pathname, { locale: newLocale })
   }
 
   return (
@@ -27,10 +19,10 @@ export default function LangSwitcher() {
       variant="outline"
       size="sm"
       onClick={switchLocale}
-      aria-label={isEn ? '한국어로 전환' : 'Switch to English'}
+      aria-label={locale === 'en' ? '한국어로 전환' : 'Switch to English'}
       className="min-w-[52px] text-xs font-medium"
     >
-      {isEn ? 'KO' : 'EN'}
+      {locale === 'en' ? 'KO' : 'EN'}
     </Button>
   )
 }

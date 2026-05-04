@@ -1,3 +1,41 @@
+'use client'
+
+import { useLocale } from 'next-intl'
+
+const sidebarData = {
+  ko: [
+    { icon: '📥', label: 'Inbox (3)', active: true },
+    { icon: '📋', label: '오늘 할 일', active: false },
+    { icon: '📁', label: '프로젝트', active: false },
+    { icon: '🔍', label: '검색', active: false },
+  ],
+  en: [
+    { icon: '📥', label: 'Inbox (3)', active: true },
+    { icon: '📋', label: 'Today', active: false },
+    { icon: '📁', label: 'Projects', active: false },
+    { icon: '🔍', label: 'Search', active: false },
+  ],
+}
+
+const chatAreaData = {
+  ko: {
+    aiGreeting: '좋은 아침이에요! 오늘 3건의 할 일이 있어요.',
+    userMsg: '어제 미팅 내용 정리해줘',
+    aiReplyIntro: '📋 어제 팀 미팅 요약:',
+    aiReplyItems: ['1. Q2 런칭 → 6/15 확정', '2. 디자인 리뷰 → 매주 화'],
+    aiReplyFooter: '할 일 2건을 자동 생성했어요 ✨',
+    inputPlaceholder: '메시지를 입력하세요...',
+  },
+  en: {
+    aiGreeting: 'Good morning! You have 3 tasks today.',
+    userMsg: "Summarize yesterday's meeting",
+    aiReplyIntro: "📋 Yesterday's team meeting:",
+    aiReplyItems: ['1. Q2 launch → 6/15 confirmed', '2. Design review → every Tue'],
+    aiReplyFooter: 'Auto-created 2 tasks ✨',
+    inputPlaceholder: 'Type a message...',
+  },
+}
+
 function WindowChrome() {
   return (
     <div className="flex items-center gap-1.5 border-b border-[var(--color-border)] bg-[var(--color-surface)] px-3 py-2.5">
@@ -21,13 +59,8 @@ function AiAvatar() {
   )
 }
 
-function Sidebar() {
-  const items = [
-    { icon: '📥', label: 'Inbox', badge: '3', active: true },
-    { icon: '📋', label: '오늘 할 일', badge: null, active: false },
-    { icon: '📁', label: '프로젝트', badge: null, active: false },
-    { icon: '🔍', label: '검색', badge: null, active: false },
-  ]
+function Sidebar({ lang }: { lang: 'ko' | 'en' }) {
+  const items = sidebarData[lang]
 
   return (
     <div className="flex flex-col gap-0.5 border-r border-[var(--color-border)] bg-[var(--color-surface)] p-2">
@@ -42,9 +75,9 @@ function Sidebar() {
         >
           <span>{item.icon}</span>
           <span className="truncate">{item.label}</span>
-          {item.badge && (
+          {item.active && (
             <span className="ml-auto flex h-3.5 min-w-[14px] items-center justify-center rounded-full bg-[var(--color-primary)] px-1 text-[8px] font-medium text-white">
-              {item.badge}
+              3
             </span>
           )}
         </div>
@@ -53,7 +86,9 @@ function Sidebar() {
   )
 }
 
-function ChatArea() {
+function ChatArea({ lang }: { lang: 'ko' | 'en' }) {
+  const d = chatAreaData[lang]
+
   return (
     <div className="flex flex-1 flex-col">
       <div className="flex flex-1 flex-col gap-2.5 p-3">
@@ -61,14 +96,14 @@ function ChatArea() {
         <div className="flex items-start gap-1.5">
           <AiAvatar />
           <div className="rounded-xl bg-[var(--color-surface)] px-2.5 py-1.5 text-[11px] text-[var(--color-text)]">
-            좋은 아침이에요! 오늘 3건의 할 일이 있어요.
+            {d.aiGreeting}
           </div>
         </div>
 
         {/* User message */}
         <div className="flex justify-end">
           <div className="rounded-xl bg-[var(--color-primary)]/10 px-2.5 py-1.5 text-[11px] text-[var(--color-text)]">
-            어제 미팅 내용 정리해줘
+            {d.userMsg}
           </div>
         </div>
 
@@ -76,13 +111,14 @@ function ChatArea() {
         <div className="flex items-start gap-1.5">
           <AiAvatar />
           <div className="rounded-xl bg-[var(--color-surface)] px-2.5 py-1.5 text-[11px] text-[var(--color-text)]">
-            <p>📋 어제 팀 미팅 요약:</p>
+            <p>{d.aiReplyIntro}</p>
             <ol className="mt-1 space-y-0.5 pl-3 text-[var(--color-text-secondary)]">
-              <li>1. Q2 런칭 → 6/15 확정</li>
-              <li>2. 디자인 리뷰 → 매주 화</li>
+              {d.aiReplyItems.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
             </ol>
             <p className="mt-1.5 text-[var(--color-primary)]">
-              할 일 2건을 자동 생성했어요 ✨
+              {d.aiReplyFooter}
             </p>
           </div>
         </div>
@@ -92,7 +128,7 @@ function ChatArea() {
       <div className="border-t border-[var(--color-border)] p-2">
         <div className="flex items-center gap-2 rounded-lg border border-[var(--color-border)] bg-white px-2.5 py-1.5">
           <span className="flex-1 text-[10px] text-[var(--color-text-muted)]">
-            메시지를 입력하세요...
+            {d.inputPlaceholder}
           </span>
           <div className="flex h-5 w-5 items-center justify-center rounded-full bg-[var(--color-primary)]">
             <svg className="h-2.5 w-2.5 text-white" viewBox="0 0 12 12" fill="none">
@@ -106,12 +142,15 @@ function ChatArea() {
 }
 
 export default function HeroDemo() {
+  const locale = useLocale()
+  const lang = locale === 'en' ? 'en' : 'ko'
+
   return (
     <div className="overflow-hidden rounded-xl border border-[var(--color-border)] bg-white shadow-lg">
       <WindowChrome />
       <div className="grid grid-cols-[30%_1fr]" style={{ minHeight: '280px' }}>
-        <Sidebar />
-        <ChatArea />
+        <Sidebar lang={lang} />
+        <ChatArea lang={lang} />
       </div>
     </div>
   )

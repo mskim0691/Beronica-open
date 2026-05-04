@@ -1,3 +1,18 @@
+'use client'
+
+import { useLocale } from 'next-intl'
+
+const folderData = {
+  ko: {
+    projects: ['Q2 런칭', '블로그 리뉴얼'],
+    areas: ['건강 관리', '팀 매니지먼트'],
+  },
+  en: {
+    projects: ['Q2 Launch', 'Blog Redesign'],
+    areas: ['Health', 'Team Management'],
+  },
+}
+
 function WindowChrome() {
   return (
     <div className="flex items-center gap-1.5 border-b border-[var(--color-border)] bg-[var(--color-surface)] px-3 py-2">
@@ -46,19 +61,23 @@ function FileRow({ label, active = false }: { label: string; active?: boolean })
 }
 
 export default function DemoFolder() {
+  const locale = useLocale()
+  const lang = locale === 'en' ? 'en' : 'ko'
+  const data = folderData[lang]
+
   return (
     <div className="flex h-full flex-col">
       <WindowChrome />
       <div className="flex flex-1 flex-col justify-center p-4">
         <div className="space-y-0.5">
           <FolderRow label="Projects" dotColor="var(--color-primary)" expanded>
-            <FileRow label="Q2 런칭" active />
-            <FileRow label="블로그 리뉴얼" />
+            <FileRow label={data.projects[0]} active />
+            <FileRow label={data.projects[1]} />
           </FolderRow>
 
           <FolderRow label="Areas" dotColor="var(--color-success)" expanded>
-            <FileRow label="건강 관리" />
-            <FileRow label="팀 매니지먼트" />
+            <FileRow label={data.areas[0]} />
+            <FileRow label={data.areas[1]} />
           </FolderRow>
 
           <FolderRow label="Resources" dotColor="var(--color-accent)" expanded={false} />
