@@ -26,7 +26,7 @@ export function generatePostMeta(post: {
       type: 'article' as const,
       publishedTime: post.date,
       authors: [post.author],
-      images: post.image ? [{ url: post.image }] : [{ url: SITE_META.ogImage }],
+      images: post.image ? [{ url: post.image }] : undefined,
     },
     twitter: {
       card: 'summary_large_image' as const,
