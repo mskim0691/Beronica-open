@@ -10,7 +10,9 @@ import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
 import { createClient } from '@supabase/supabase-js'
-import 'dotenv/config'
+import { config } from 'dotenv'
+
+config({ path: path.join(process.cwd(), '.env.local') })
 
 const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL!,
