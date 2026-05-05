@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { useTranslations } from 'next-intl'
+import { getTranslations } from 'next-intl/server'
 import { getPostBySlug, getAllPosts, getPostsByCategory } from '@/lib/mdx'
 import { generatePostMeta, generateArticleJsonLd, generateAlternates } from '@/lib/seo'
 import BlogMDX from '@/components/sections/blog/BlogMDX'
@@ -33,7 +33,7 @@ export default async function BlogPostPage({ params }: { params: Promise<{ local
   const post = await getPostBySlug(slug, typedLocale)
   if (!post) notFound()
 
-  const t = useTranslations('blog')
+  const t = await getTranslations('blog')
   const prefix = typedLocale === 'ko' ? '' : '/en'
 
   const relatedPosts = (await getPostsByCategory(post.category, typedLocale))

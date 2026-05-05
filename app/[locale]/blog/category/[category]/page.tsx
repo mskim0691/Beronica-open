@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { useTranslations } from 'next-intl'
+import { getTranslations } from 'next-intl/server'
 import { getPostsByCategory, getCategories } from '@/lib/mdx'
 import { generateAlternates } from '@/lib/seo'
 import PostList from '@/components/sections/blog/PostList'
@@ -22,7 +22,7 @@ export default async function CategoryPage({ params }: { params: Promise<{ local
     getPostsByCategory(decoded, typedLocale),
     getCategories(typedLocale),
   ])
-  const t = useTranslations('blog')
+  const t = await getTranslations('blog')
 
   return (
     <>
