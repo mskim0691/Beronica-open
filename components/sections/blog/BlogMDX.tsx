@@ -22,7 +22,7 @@ function Callout({ type = 'info', children }: { type?: 'info' | 'warning' | 'tip
 
 const mdxComponents = {
   h2: (props: React.ComponentProps<'h2'>) => (
-    <h2 className="mt-12 mb-4 text-2xl font-bold text-[var(--color-text)]" {...props} />
+    <h2 className="mt-10 mb-3 text-lg font-bold text-[var(--color-text)]" {...props} />
   ),
   h3: (props: React.ComponentProps<'h3'>) => (
     <h3 className="mt-8 mb-3 text-xl font-semibold text-[var(--color-text)]" {...props} />
@@ -55,6 +55,23 @@ const mdxComponents = {
     }
     return <code className="font-mono" {...props} />
   },
+  table: (props: React.ComponentProps<'table'>) => (
+    <div className="my-6 overflow-x-auto">
+      <table className="w-full border-collapse border border-[var(--color-border)] text-sm" {...props} />
+    </div>
+  ),
+  thead: (props: React.ComponentProps<'thead'>) => (
+    <thead className="bg-[var(--color-surface)]" {...props} />
+  ),
+  th: (props: React.ComponentProps<'th'>) => (
+    <th className="border border-[var(--color-border)] px-3 py-2 text-left font-semibold" {...props} />
+  ),
+  td: (props: React.ComponentProps<'td'>) => (
+    <td className="border border-[var(--color-border)] px-3 py-2" {...props} />
+  ),
+  tr: (props: React.ComponentProps<'tr'>) => (
+    <tr className="border-b border-[var(--color-border)]" {...props} />
+  ),
   img: (props: React.ComponentProps<'img'>) => (
     // eslint-disable-next-line @next/next/no-img-element
     <img className="my-6 rounded-[var(--radius-card)]" alt={props.alt || ''} {...props} />
