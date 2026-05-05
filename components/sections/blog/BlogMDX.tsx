@@ -21,6 +21,9 @@ function Callout({ type = 'info', children }: { type?: 'info' | 'warning' | 'tip
 }
 
 const mdxComponents = {
+  h1: (props: React.ComponentProps<'h1'>) => (
+    <h1 className="mt-10 mb-4 text-xl font-bold text-[var(--color-text)]" {...props} />
+  ),
   h2: (props: React.ComponentProps<'h2'>) => (
     <h2 className="mt-10 mb-3 text-lg font-bold text-[var(--color-text)]" {...props} />
   ),
