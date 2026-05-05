@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { generateAlternates } from '@/lib/seo'
-import { SITE_META, CONTACT } from '@/lib/site-config'
+import { SITE_META } from '@/lib/site-config'
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }): Promise<Metadata> {
   const { locale } = await params
@@ -87,26 +87,6 @@ export default async function AboutPage({ params }: { params: Promise<{ locale: 
         </div>
       </section>
 
-      <section className="py-16 bg-[var(--color-surface)]">
-        <div className="mx-auto max-w-3xl px-4 sm:px-6">
-          <h2 className="text-2xl font-bold mb-6">
-            {isKo ? '만든 사람' : 'Creator'}
-          </h2>
-          <div className="text-[var(--color-text-secondary)] leading-relaxed space-y-4">
-            <p>
-              {isKo
-                ? `${SITE_META.author} — 7개월 넘게 베로니카 시스템을 직접 사용하며 개발하고 있습니다. "내가 매일 쓰는 시스템"이라는 원칙으로, 실전에서 검증된 기능만 공개합니다.`
-                : `${SITE_META.author} — Building and using the Beronica system for over 7 months. Following the principle of "a system I use every day," only battle-tested features are released.`}
-            </p>
-            <p className="text-sm">
-              {isKo ? '문의: ' : 'Contact: '}
-              <a href={`mailto:${CONTACT.email}`} className="text-[var(--color-primary)] hover:underline">
-                {CONTACT.email}
-              </a>
-            </p>
-          </div>
-        </div>
-      </section>
     </>
   )
 }
