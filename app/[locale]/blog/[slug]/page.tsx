@@ -8,14 +8,7 @@ import BlogMDX from '@/components/sections/blog/BlogMDX'
 import ShareButton from '@/components/sections/blog/ShareButton'
 import PostCard from '@/components/sections/blog/PostCard'
 
-export async function generateStaticParams() {
-  const koPosts = await getAllPosts('ko')
-  const enPosts = await getAllPosts('en')
-  return [
-    ...koPosts.map(p => ({ locale: 'ko', slug: p.slug })),
-    ...enPosts.map(p => ({ locale: 'en', slug: p.slug })),
-  ]
-}
+export const dynamic = 'force-dynamic'
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string; slug: string }> }): Promise<Metadata> {
   const { locale, slug } = await params
