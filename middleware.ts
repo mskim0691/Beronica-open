@@ -8,7 +8,7 @@ export default createMiddleware({
   locales,
   defaultLocale,
   localePrefix: 'as-needed',  // ko → /, en → /en/...
-  localeDetection: true,      // Accept-Language 헤더 기반 첫 방문 감지
+  localeDetection: false,
 })
 
 export const config = {
